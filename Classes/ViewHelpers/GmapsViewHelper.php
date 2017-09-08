@@ -37,7 +37,7 @@ namespace Qbus\Qbmaps\ViewHelpers;
  */
 class GmapsViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractTagBasedViewHelper {
 	
-	const GAPI			= 'http://maps.google.com/maps/api/js?v=3&sensor=false';
+	const GAPI			= '//maps.google.com/maps/api/js?v=3&sensor=false';
 	const TEMPLATE_JS	= 'Static/Gmaps.js';
 	const TEMPLATE_CSS  = 'Static/Gmaps.css';
 	
