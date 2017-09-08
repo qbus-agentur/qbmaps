@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteBase /typo3conf/ext/qbmaps/Resources/Public/JavaScript/gmap3v5.1.1/
+
+RewriteCond %{HTTP_USER_AGENT} "MSIE [6-8]" [NC]
+RewriteRule gmap3.min.js gmap3.js [L]
