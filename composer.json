@@ -1,0 +1,31 @@
+{
+    "name": "qbus/qbmaps",
+    "type": "typo3-cms-extension",
+    "description": "TYPO3 Extension to render google maps",
+    "keywords": [
+        "TYPO3",
+        "extension"
+    ],
+    "homepage": "https://www.qbus.de",
+    "authors": [
+        {
+            "name": "Benjamin Franzke",
+            "email": "bfr@qbus.de",
+            "role": "Developer",
+            "homepage": "https://www.qbus.de"
+        }
+    ],
+    "license": "GPL-2.0+",
+    "require": {
+        "typo3/cms-core": "^6.2.14|^7.6|^8.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Qbus\\Qbmaps\\": "Classes"
+        }
+    },
+    "replace": {
+        "qbmaps": "self.version",
+        "typo3-ter/qbmaps": "self.version"
+    }
+}

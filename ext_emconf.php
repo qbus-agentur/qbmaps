@@ -11,7 +11,7 @@
  ***************************************************************/
 
 $EM_CONF[$_EXTKEY] = array(
-	'title' => 'qbMaps: Display Google maps',
+	'title' => 'qbmaps: Display Google maps',
 	'description' => 'Several ways to display maps and markers on it',
 	'category' => 'plugin',
 	'author' => 'Axel Wüstemann',
@@ -27,12 +27,12 @@ $EM_CONF[$_EXTKEY] = array(
 	'modify_tables' => '',
 	'clearCacheOnLoad' => 0,
 	'lockType' => '',
-	'version' => '1.0.0',
+	'version' => '1.1.0',
 	'constraints' => array(
 		'depends' => array(
-			'extbase' => '6.1',
-			'fluid' => '6.1',
-			'typo3' => '6.1',
+			'extbase' => '6.2',
+			'fluid' => '6.2',
+			'typo3' => '6.2',
 		),
 		'conflicts' => array(
 		),
