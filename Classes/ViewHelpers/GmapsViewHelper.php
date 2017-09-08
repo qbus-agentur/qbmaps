@@ -81,8 +81,10 @@ class GmapsViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractTagBasedV
 	 */
 	public function render() 
 	{
-		// get params
-		$geoCoordinates = $this->arguments['coordinates'];
+			/* Take only coordinates that have lat and long set */
+		$geoCoordinates = array_filter($this->arguments['coordinates'], function($coordinate) {
+ 			return strlen($coordinate["lat"]) && strlen($coordinate["long"]);
+ 		});
         $centerOfMap = $this->qbmapsGeneralUtility->calculateCenterOfMap($geoCoordinates);
         if (count($geoCoordinates) == 0) return '';
        

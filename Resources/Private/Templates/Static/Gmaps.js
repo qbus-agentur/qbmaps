@@ -7,7 +7,7 @@ $(document).ready(function() {
 				options: <![CDATA[{]]>
 					center: [{center.lat}, {center.long}],
 					zoom: {zoom},
-                    draggable: false,
+                    draggable: true,
 					mapTypeId: google.maps.MapTypeId.ROADMAP,
 //					mapTypeControlOptions: {
 //          				 mapTypeIds: [google.maps.MapTypeId.ROADMAP, "blau"]

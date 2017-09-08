@@ -99,8 +99,8 @@ class GeneralUtility
         elseif (is_array($coords) && count($coords) == 1)
         {
             return array(
-                'long' => $coords[0]['long'],
-                'lat'  => $coords[0]['lat']
+                'long' => $coords[key($coords)]['long'],
+                'lat'  => $coords[key($coords)]['lat']
             );
         }
     }
