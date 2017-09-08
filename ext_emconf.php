@@ -13,7 +13,7 @@
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'qbMaps: Display Google maps',
 	'description' => 'Several ways to display maps and markers on it',
-	'category' => 'misc',
+	'category' => 'plugin',
 	'author' => 'Axel Wüstemann',
 	'author_email' => 'awu@qbus.de',
 	'author_company' => 'Qbus Werbeagentur GmbH',
