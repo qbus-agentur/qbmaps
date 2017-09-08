@@ -75,13 +75,18 @@ class GeneralUtility
      */
     public function calculateCenterOfMap(array $coords)
     {
+	$lons = $lats = array();
         if (is_array($coords) && count($coords) > 1)
         {
             foreach ($coords as $coord)
             {
+		if (!$coord['long'] || !$coord['lat'])
+			continue;
                 $lons[] = $coord['long'];
                 $lats[] = $coord['lat'];
             }
+            if (count($lons) == 0)
+		return NULL;
             sort($lons, SORT_NUMERIC);
             sort($lats, SORT_NUMERIC);
 
@@ -98,11 +103,14 @@ class GeneralUtility
         } 
         elseif (is_array($coords) && count($coords) == 1)
         {
+	    if ($coords[key($coords)]['long'] == NULL)
+		return NULL;
             return array(
                 'long' => $coords[key($coords)]['long'],
                 'lat'  => $coords[key($coords)]['lat']
             );
         }
+	return NULL;
     }
 
 }
