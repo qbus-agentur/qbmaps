@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     	$("#map-canvas").gmap3({
 			map: {
-				options: <![CDATA[{]]>
+				options: {
 					center: [{center.lat}, {center.long}],
 					zoom: {zoom},
                     draggable: true,
